@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+:root{
+    --primary-color: hsla(14, 91%, 55%, 0.959);
+    --secundary-color: #f5e726d2;
+    --third-color: #38c4eed2;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secundary-color);
+
+}
+
+#pokeball{
+    width: 5%;
+    display: flex;
+    justify-content: start;
+    border-radius: 250px;
+    -ms-flex-item-align: start;
+    background-color: var(--third-color);
+    border: 3px solid var(--third-color);
+}
+header h2{
+    color: #fff;
+}
+
+.search{
+    background-color: transparent;
+    border: 2px solid  var(--primary-color);
+    border-radius:50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+
+.search::placeholder{
+    color:#7378c5;
+}
+
+.search:focus{
+    outline: none;
+    background-color: var(--third-color);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+}
+
+
+.pokemon-container{
+    width: 190px;
+    margin: 0;
+    padding: 0;
+    margin-top:1rem;
+    background-color: var(--third-color);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position:initial;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-info{
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3{
+margin-top: 0;
+}
+
+
+.movie-info span{
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color: lightgreen;
+}
+
+.movie-info span.orange{
+    color: orange;
+}
+
+.movie-info span.red{
+    color: red;
+}
+
+
+
